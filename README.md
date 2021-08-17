@@ -1,2 +1,2 @@
-# REF0022-Biomec-nica2
+# REF0022-Biomecânica2
 Disciplina de Graduação da EEFERP-USP
