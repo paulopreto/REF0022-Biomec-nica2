@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KinoveaVideoAnalysis>
+  <FormatVersion>2.0</FormatVersion>
+  <Producer>Kinovea.0.9.4</Producer>
+  <OriginalFilename>var1</OriginalFilename>
+  <FullPath>C:\Users\paulo\Desktop\var\var1.mp4</FullPath>
+  <ImageSize>1920;1080</ImageSize>
+  <Mirror>false</Mirror>
+  <AverageTimeStampsPerFrame>512</AverageTimeStampsPerFrame>
+  <CaptureFramerate>30</CaptureFramerate>
+  <UserFramerate>30</UserFramerate>
+  <FirstTimeStamp>357</FirstTimeStamp>
+  <SelectionStart>357</SelectionStart>
+  <TimeOrigin>357</TimeOrigin>
+  <Calibration>
+    <CalibrationPlane>
+      <Size>16.5;29.3</Size>
+      <Quadrilateral>
+        <A>331.5349;291.3488</A>
+        <B>1423.256;294.6977</B>
+        <C>1724.651;920.9302</C>
+        <D>288;904.1861</D>
+      </Quadrilateral>
+      <Origin>-1.749854E-08;29.3</Origin>
+    </CalibrationPlane>
+    <CalibrationDrawingId>e2ec0136-540e-4fb0-99b9-f9a015eb38f9</CalibrationDrawingId>
+    <Unit Abbreviation="m">Meters</Unit>
+  </Calibration>
+  <Keyframes>
+    <Keyframe id="8f848f53-d3f6-4238-bb51-a3c04b7bb1e5">
+      <Position UserTime="175">89957</Position>
+      <Title>175</Title>
+      <Drawings>
+        <Plane id="e2ec0136-540e-4fb0-99b9-f9a015eb38f9" name="Perspective grid 1">
+          <PointUpperLeft>331.5349;291.3488</PointUpperLeft>
+          <PointUpperRight>1423.256;294.6977</PointUpperRight>
+          <PointLowerRight>1724.651;920.9302</PointLowerRight>
+          <PointLowerLeft>288;904.1861</PointLowerLeft>
+          <DrawingStyle>
+            <Color Key="color">
+              <Value>255;255;0;0</Value>
+            </Color>
+            <GridDivisions Key="divisions">
+              <Value>7</Value>
+            </GridDivisions>
+            <Toggle Key="perspective">
+              <Value>true</Value>
+              <Variant>Perspective</Variant>
+            </Toggle>
+          </DrawingStyle>
+          <InfosFading>
+            <Enabled>true</Enabled>
+            <UseDefault>false</UseDefault>
+            <AlwaysVisible>true</AlwaysVisible>
+            <MasterFactor>1</MasterFactor>
+            <OpaqueFrames>1</OpaqueFrames>
+            <Frames>20</Frames>
+          </InfosFading>
+        </Plane>
+        <Line id="024e337b-a2a6-4443-9ddb-50c6ad6e54de" name="Line 1">
+          <Start>751.5537;292.5897</Start>
+          <End>833.3068;909.3227</End>
+          <ExtraData>None</ExtraData>
+          <MeasureLabel>
+            <SpacePosition>772.4302;550.9562</SpacePosition>
+            <TimePosition>0</TimePosition>
+          </MeasureLabel>
+          <DrawingStyle>
+            <Color Key="color">
+              <Value>255;255;127;0</Value>
+            </Color>
+            <LineSize Key="line size">
+              <Value>4</Value>
+            </LineSize>
+            <LineShape Key="line shape">
+              <Value>Solid</Value>
+            </LineShape>
+            <Arrows Key="arrows">
+              <Value>None</Value>
+            </Arrows>
+          </DrawingStyle>
+          <InfosFading>
+            <Enabled>true</Enabled>
+            <UseDefault>false</UseDefault>
+            <AlwaysVisible>true</AlwaysVisible>
+            <MasterFactor>1</MasterFactor>
+            <OpaqueFrames>1</OpaqueFrames>
+            <Frames>20</Frames>
+          </InfosFading>
+          <Measure UserLength="29.26" UserLengthInvariant="29.26" UserUnitLength="m" />
+        </Line>
+        <Rectangle id="db39a610-1216-460e-9050-22b99a73cb67" name="Rectangle 1">
+          <PointUpperLeft>797.4502;598.0876</PointUpperLeft>
+          <PointUpperRight>797.4502;598.0876</PointUpperRight>
+          <PointLowerRight>797.4502;598.0876</PointLowerRight>
+          <PointLowerLeft>797.4502;598.0876</PointLowerLeft>
+          <DrawingStyle>
+            <Color Key="color">
+              <Value>255;100;149;237</Value>
+            </Color>
+            <LineSize Key="line size">
+              <Value>2</Value>
+            </LineSize>
+            <PenShape Key="pen shape">
+              <Value>Solid</Value>
+            </PenShape>
+          </DrawingStyle>
+          <InfosFading>
+            <Enabled>true</Enabled>
+            <UseDefault>true</UseDefault>
+            <AlwaysVisible>false</AlwaysVisible>
+            <MasterFactor>1</MasterFactor>
+            <OpaqueFrames>1</OpaqueFrames>
+            <Frames>20</Frames>
+          </InfosFading>
+        </Rectangle>
+        <Rectangle id="a4c454cd-c5ce-42e7-8175-07c6a117fc33" name="Rectangle 2">
+          <PointUpperLeft>902.1514;681.2749</PointUpperLeft>
+          <PointUpperRight>902.1514;681.2749</PointUpperRight>
+          <PointLowerRight>902.1514;681.2749</PointLowerRight>
+          <PointLowerLeft>902.1514;681.2749</PointLowerLeft>
+          <DrawingStyle>
+            <Color Key="color">
+              <Value>255;100;149;237</Value>
+            </Color>
+            <LineSize Key="line size">
+              <Value>2</Value>
+            </LineSize>
+            <PenShape Key="pen shape">
+              <Value>Solid</Value>
+            </PenShape>
+          </DrawingStyle>
+          <InfosFading>
+            <Enabled>true</Enabled>
+            <UseDefault>true</UseDefault>
+            <AlwaysVisible>false</AlwaysVisible>
+            <MasterFactor>1</MasterFactor>
+            <OpaqueFrames>1</OpaqueFrames>
+            <Frames>20</Frames>
+          </InfosFading>
+        </Rectangle>
+        <Line id="9b6605c6-4f72-4e6c-8368-50cc264bb9fc" name="Line 2">
+          <Start>722.8685;292.5896</Start>
+          <End>797.4502;915.0598</End>
+          <ExtraData>None</ExtraData>
+          <MeasureLabel>
+            <SpacePosition>740.1594;553.8247</SpacePosition>
+            <TimePosition>0</TimePosition>
+          </MeasureLabel>
+          <DrawingStyle>
+            <Color Key="color">
+              <Value>255;0;255;255</Value>
+            </Color>
+            <LineSize Key="line size">
+              <Value>4</Value>
+            </LineSize>
+            <LineShape Key="line shape">
+              <Value>Solid</Value>
+            </LineShape>
+            <Arrows Key="arrows">
+              <Value>None</Value>
+            </Arrows>
+          </DrawingStyle>
+          <InfosFading>
+            <Enabled>true</Enabled>
+            <UseDefault>false</UseDefault>
+            <AlwaysVisible>true</AlwaysVisible>
+            <MasterFactor>1</MasterFactor>
+            <OpaqueFrames>1</OpaqueFrames>
+            <Frames>20</Frames>
+          </InfosFading>
+          <Measure UserLength="29.48" UserLengthInvariant="29.48" UserUnitLength="m" />
+        </Line>
+        <Line id="bac360ad-b536-4a31-b3d3-451237674b57" name="Line 3">
+          <Start>1164.621;645.4183</Start>
+          <End>1164.621;645.4183</End>
+          <ExtraData>None</ExtraData>
+          <MeasureLabel>
+            <SpacePosition>1144.621;595.4183</SpacePosition>
+            <TimePosition>0</TimePosition>
+          </MeasureLabel>
+          <DrawingStyle>
+            <Color Key="color">
+              <Value>255;255;127;0</Value>
+            </Color>
+            <LineSize Key="line size">
+              <Value>2</Value>
+            </LineSize>
+            <LineShape Key="line shape">
+              <Value>Solid</Value>
+            </LineShape>
+            <Arrows Key="arrows">
+              <Value>None</Value>
+            </Arrows>
+          </DrawingStyle>
+          <InfosFading>
+            <Enabled>true</Enabled>
+            <UseDefault>true</UseDefault>
+            <AlwaysVisible>false</AlwaysVisible>
+            <MasterFactor>1</MasterFactor>
+            <OpaqueFrames>1</OpaqueFrames>
+            <Frames>20</Frames>
+          </InfosFading>
+          <Measure UserLength="0.00" UserLengthInvariant="0.00" UserUnitLength="m" />
+        </Line>
+      </Drawings>
+    </Keyframe>
+    <Keyframe id="4fc4097b-2ba1-4fc4-a428-1a9ed053b769">
+      <Position UserTime="176">90469</Position>
+      <Title>176</Title>
+      <Drawings>
+        <Line id="fbf2f8ae-c217-49f3-97a6-9cf29ff7f5a1" name="Line 4">
+          <Start>738.6739;293.7621</Start>
+          <End>820.6318;911.5196</End>
+          <ExtraData>None</ExtraData>
+          <MeasureLabel>
+            <SpacePosition>759.6528;552.6409</SpacePosition>
+            <TimePosition>0</TimePosition>
+          </MeasureLabel>
+          <DrawingStyle>
+            <Color Key="color">
+              <Value>255;101;0;204</Value>
+            </Color>
+            <LineSize Key="line size">
+              <Value>4</Value>
+            </LineSize>
+            <LineShape Key="line shape">
+              <Value>Dash</Value>
+            </LineShape>
+            <Arrows Key="arrows">
+              <Value>None</Value>
+            </Arrows>
+          </DrawingStyle>
+          <InfosFading>
+            <Enabled>true</Enabled>
+            <UseDefault>true</UseDefault>
+            <AlwaysVisible>false</AlwaysVisible>
+            <MasterFactor>1</MasterFactor>
+            <OpaqueFrames>1</OpaqueFrames>
+            <Frames>20</Frames>
+          </InfosFading>
+          <Measure UserLength="29.27" UserLengthInvariant="29.27" UserUnitLength="m" />
+        </Line>
+      </Drawings>
+    </Keyframe>
+  </Keyframes>
+  <CoordinateSystem id="af689d34-c577-446a-8eac-8f74f7861d0f" name="Coordinate system 1">
+    <Visible>false</Visible>
+    <DrawingStyle>
+      <Color Key="line color">
+        <Value>255;255;255;51</Value>
+      </Color>
+    </DrawingStyle>
+  </CoordinateSystem>
+  <Trackability />
+</KinoveaVideoAnalysis>
