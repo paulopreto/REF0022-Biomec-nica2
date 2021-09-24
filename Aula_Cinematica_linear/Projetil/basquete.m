@@ -1,11 +1,25 @@
 function basquete
 
+clear all
+close all
 figure
+disp('')
+disp('#####################')
 projetil4(2,3.05,7.5,15)
+disp('')
+disp('#####################')
 projetil4(2,3.05,7.5,30)
+disp('')
+disp('#####################')
 projetil4(2,3.05,7.5,45)
+disp('')
+disp('#####################')
 projetil4(2,3.05,7.5,63)
+disp('')
+disp('#####################')
 projetil4(2,3.05,7.5,60)
+disp('')
+disp('#####################')
 projetil4(2,3.05,7.5,75)
 
 set(gcf,'color',[1 1 1])
