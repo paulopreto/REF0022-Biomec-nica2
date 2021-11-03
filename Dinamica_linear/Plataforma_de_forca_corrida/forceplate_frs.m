@@ -15,5 +15,17 @@ hold on
 plot(fz2_vol1_retrope, 'b')
 
 
+fsuporte_a = find(fz2_vol1_antepe > 0);
+fsuporte_r = find(fz2_vol1_retrope > 0);
+
+
+fz2_vol1a = fz2_vol1_antepe(fsuporte_a, :);
+fz2_vol1r = fz2_vol1_retrope(fsuporte_r, :);
+figure 
+plot(fz2_vol1a, 'r')
+hold on
+plot(fz2_vol1r, 'b')
+
+
 #size(data)
 #csvread
