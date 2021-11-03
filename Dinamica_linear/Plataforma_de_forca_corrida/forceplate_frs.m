@@ -15,8 +15,8 @@ hold on
 plot(fz2_vol1_retrope, 'b')
 
 
-fsuporte_a = find(fz2_vol1_antepe > 0);
-fsuporte_r = find(fz2_vol1_retrope > 0);
+fsuporte_a = find(fz2_vol1_antepe(1:8000, :) > 0);
+fsuporte_r = find(fz2_vol1_retrope(1:8000, :) > 0);
 
 
 fz2_vol1a = fz2_vol1_antepe(fsuporte_a, :);
@@ -25,7 +25,4 @@ figure
 plot(fz2_vol1a, 'r')
 hold on
 plot(fz2_vol1r, 'b')
-
-
-#size(data)
-#csvread
+title('FRS [Vermelho = antepe; Azul = retrope]')
