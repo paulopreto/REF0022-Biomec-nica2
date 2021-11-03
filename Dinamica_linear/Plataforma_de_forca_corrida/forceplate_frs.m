@@ -26,3 +26,5 @@ plot(fz2_vol1a, 'r')
 hold on
 plot(fz2_vol1r, 'b')
 title('FRS [Vermelho = antepe; Azul = retrope]')
+ylabel('Force [N]')
+xlabel('Frames') % passar para tempo em segundos
