@@ -23,7 +23,7 @@ hold on
 plot(vet_tempo(posmax), data(posmax), "vr",  "markersize", 8)
 xlabel("Time [s]")
 ylabel("Force [N]")
-pause(10)
+pause()
 
 
 end
