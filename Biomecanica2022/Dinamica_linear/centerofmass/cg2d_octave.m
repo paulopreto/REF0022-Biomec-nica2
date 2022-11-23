@@ -1,6 +1,6 @@
 % CALCULO DO CG EM IMAGEM (BIDIMENSIONAL)
 % Rotina criada por Paulo R. P. Santiago (Preto).
-% Primeira versao 08/04/07, ultima atualizacao 23/11/2022
+% Primeira versao 08/04/07, ultima atualizacao ?????
 %
 % Disciplina: Biomecanica e Fund. de Biomecanica para EF - UFSCar
 %
