@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import filedialog, Canvas, Button, Label
 from PIL import Image, ImageTk
 
-# Variáveis globais
+# Global variables
 points = {}
 current_frame = 0
 cap = None
@@ -21,7 +21,7 @@ def load_video():
     video_path = filepath
     cap = cv2.VideoCapture(filepath)
     current_frame = 0
-    update_frame_label()  # Atualize o rótulo do frame
+    update_frame_label()
     show_frame()
 
 def show_frame():
@@ -46,11 +46,12 @@ def click_event(event):
         if current_frame not in points:
             points[current_frame] = []
         points[current_frame].append((x, y))
-        canvas.create_oval(x-5, y-5, x+5, y+5, fill='red')
+        canvas.create_oval(x-5, y-5, x+5, y+5, fill='red', tags="marker")
     elif event.num == 3:
         if current_frame in points and (x, y) in points[current_frame]:
             points[current_frame].remove((x, y))
-            canvas.create_oval(x-5, y-5, x+5, y+5, fill='black')
+            canvas.create_oval(x-5, y-5, x+5, y+5, fill='black', tags="marker")
+    save_points()
 
 def key_event(event):
     if event.keysym == 'Right':
@@ -62,14 +63,14 @@ def next_frame():
     global current_frame
     current_frame += 1
     cap.set(cv2.CAP_PROP_POS_FRAMES, current_frame)
-    update_frame_label()  # Atualize o rótulo do frame
+    update_frame_label()
     show_frame()
 
 def prev_frame():
     global current_frame
     current_frame = max(0, current_frame - 1)
     cap.set(cv2.CAP_PROP_POS_FRAMES, current_frame)
-    update_frame_label()  # Atualize o rótulo do frame
+    update_frame_label()
     show_frame()
 
 def save_points():
@@ -85,15 +86,20 @@ def save_points():
                     f.write("\t".join(coordinates) + "\n")
                 else:
                     f.write("-9999,-9999\n")
-        window.title("SantiagoMarker - Points saved successfully!")
+        window.title("PauloPRETOMarker - Points saved successfully!")
     except Exception as e:
-        window.title(f"SantiagoMarker - Error: {str(e)}")
+        window.title(f"PauloPRETOMarker - Error: {str(e)}")
 
+def erase_points():
+    global points, current_frame
+    if current_frame in points:
+        del points[current_frame]
+    canvas.delete("marker")
+    show_frame()
 
 window = tk.Tk()
 window.title("PauloPRETOMarker")
 
-# Adicione um rótulo no topo para exibir o número do frame
 frame_label = Label(window, text=f"Frame: {current_frame}")
 frame_label.pack(pady=10)
 
@@ -112,7 +118,7 @@ btn_prev.pack(side=tk.LEFT)
 btn_next = Button(window, text=">>", command=next_frame)
 btn_next.pack(side=tk.LEFT)
 
-btn_save = Button(window, text="Save Points", command=save_points)
-btn_save.pack(side=tk.RIGHT, padx=10)
+btn_erase = Button(window, text="Erase Points", command=erase_points)
+btn_erase.pack(side=tk.RIGHT, padx=10)
 
 window.mainloop()
