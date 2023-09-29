@@ -33,15 +33,15 @@ def show_frame():
         return
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     
-    # Definir um tamanho máximo para exibição
-    max_display_width = 800
-    max_display_height = 500
+    # Obter as dimensões da tela
+    screen_width = window.winfo_screenwidth()
+    screen_height = window.winfo_screenheight()
 
     # Calcular a proporção de redimensionamento
     original_width = frame.shape[1]
     original_height = frame.shape[0]
-    width_ratio = max_display_width / original_width
-    height_ratio = max_display_height / original_height
+    width_ratio = screen_width / original_width
+    height_ratio = screen_height / original_height
     resize_ratio = min(width_ratio, height_ratio)
 
     # Redimensionar o frame
