@@ -1,5 +1,5 @@
 """
-Angle Calculator in Video
+paulopretoangle.py
 
 Este programa permite ao usuário carregar um vídeo e calcular ângulos entre dois pares de pontos selecionados em cada frame.
 O usuário pode navegar frame a frame e selecionar pontos clicando no vídeo. Os ângulos calculados são salvos em um arquivo de texto.
@@ -12,8 +12,8 @@ Instruções de Uso:
 5. Após selecionar dois pares de pontos, o ângulo entre eles será calculado e salvo no arquivo.
 6. Continue navegando pelos frames e selecionando pontos conforme necessário.
 
-Autor: [Seu Nome]
-Data: [Data de Criação]
+Autor: Paulo Roberto Pereira Santiago
+Data: 27 de Setembro de 2023
 """
 
 import cv2
