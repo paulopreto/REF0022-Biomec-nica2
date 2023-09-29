@@ -1,7 +1,7 @@
 import cv2
 import os
 import tkinter as tk
-from tkinter import filedialog, Canvas, Button, Label, Frame, Scrollbar
+from tkinter import filedialog, Canvas, Button, Label, Frame
 from PIL import Image, ImageTk
 from math import acos, degrees
 
@@ -32,6 +32,21 @@ def show_frame():
     if not ret:
         return
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    
+    # Definir um tamanho máximo para exibição
+    max_display_width = 800
+    max_display_height = 500
+
+    # Calcular a proporção de redimensionamento
+    original_width = frame.shape[1]
+    original_height = frame.shape[0]
+    width_ratio = max_display_width / original_width
+    height_ratio = max_display_height / original_height
+    resize_ratio = min(width_ratio, height_ratio)
+
+    # Redimensionar o frame
+    frame = cv2.resize(frame, (int(original_width * resize_ratio), int(original_height * resize_ratio)))
+
     image = Image.fromarray(frame)
     photo = ImageTk.PhotoImage(image=image)
     canvas.create_image(0, 0, image=photo, anchor=tk.NW)
