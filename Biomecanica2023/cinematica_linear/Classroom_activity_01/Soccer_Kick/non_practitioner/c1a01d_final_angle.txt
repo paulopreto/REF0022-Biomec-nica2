@@ -1,0 +1,2 @@
+Frame,Point1_x,Point1_y,Point2_x,Point2_y,Point3_x,Point3_y,Point4_x,Point4_y,Angle_degrees
+0,505,235,485,166,426,177,425,201,161.45
